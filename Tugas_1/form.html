@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Form</title>
+    <style>
+        body {
+            margin: 0 auto;
+            padding: 25px;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .input {
+            width: 15%;
+            margin: 10px 0 10px 0;
+        }
+        .pointer {
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Buat Account Baru!</h1>
+    <h2>Sign Up Form</h2>
+    <form action="./welcome.html">
+        <div class="form-group">
+            <label for="firstName">First Name</label>
+            <input type="text" name="firstName" id="firstName" class="input">
+        </div>
+
+        <div class="form-group">
+            <label for="lastName">Last Name</label>
+            <input type="text" name="lastName" id="lastName" class="input">
+        </div>
+
+        <div class="form-group">
+            <label for="gender">Gender</label>
+
+            <label for="male">
+                <input type="radio" name="gender" id="male">
+                Male
+            </label>
+
+            <label for="female">
+                <input type="radio" name="gender" id="female">
+                Female
+            </label>
+
+            <label for="other">
+                <input type="radio" name="gender" id="other">
+                Other
+            </label>
+        </div>
+
+        <div class="form-group" style="margin-top: 10px;">
+            <label for="nationality">Nationality</label>
+            <select name="nationality" id="nationality" class="input">
+                <option value="Indonesian">Indonesian</option>
+                <option value="Indonesian">Malaysian</option>
+                <option value="Indonesian">Singaporean</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="bio">Bio</label>
+            <textarea name="bio" id="bio" cols="30" rows="10" class="input"></textarea>
+        </div>
+
+        <input type="submit" value="Sign Up" class="pointer">
+
+    </form>
+</body>
+
+</html>
